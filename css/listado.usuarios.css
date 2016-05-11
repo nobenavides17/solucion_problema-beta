@@ -1,0 +1,14 @@
+.btn-2 *{
+	background:#26a69a;
+ 	color: white;
+}
+
+.btn-2:hover{
+	font-weight: bold;
+ 	color: white;
+}
+
+
+#contenido table,h5{background:white;}
+
+
