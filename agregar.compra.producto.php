@@ -12,8 +12,7 @@
 			<center><h5>Agregar Compra de Producto</h5></center>
 
 			<br>
-			<a onclick='redireccion("listado.productos.php")'><button class="btn waves-effect waves-teal"><i class="material-icons right">add</i>Lista de Productos</button></a>
-			<a onclick='redireccion("agregar.producto.php")'><button class="btn waves-effect waves-teal"><i class="material-icons right">add</i>Agregar Producto</button></a>
+			<a onclick='redireccion("listado.inventario.php")'><button class="btn waves-effect waves-teal"><i class="material-icons right">add</i>Lista de Inventario</button></a>
 			<br><br>
 			<div id="datos-producto">
 				<fieldset >

@@ -1,5 +1,6 @@
 			
 <?php 
+session_start();
 include("../conex.php");
 	if($_POST){
 
@@ -63,9 +64,10 @@ include("../conex.php");
 																	:precio_unitario,
 																	:cantidad,
 																	:fecha,
+																	
 																	:num_factura,
-																	:subtotal,
-																	'');";
+																	:id_sucursal,
+																	:subtotal,'');";
 							$conn->beginTransaction();
 							$resultado = $conn->prepare($sql);
 							$ingreso = $resultado->execute(array(":id_producto"=>$id_producto,
@@ -74,7 +76,8 @@ include("../conex.php");
 																	":cantidad"=>$cantidad,
 																	":fecha"=>$fecha,
 																	":num_factura"=>$num_factura,
-																	":subtotal"=>$subtotal));
+																	":subtotal"=>$subtotal,
+																	":id_sucursal"=>$_SESSION["id_sucursal"]));
 
 							if($ingreso){
 								$sql2 = "select inventario.stock from inventario where id_producto=:id_producto";
@@ -89,12 +92,12 @@ include("../conex.php");
 																					":stock"=>$nuevo_stock));
 									if ($actualizar_stock) {
 										$conn->commit();
-										echo "True";
+										echo "Producto agregado a Comprar Exitosamente.";
 									}else{echo "false2";}
 								}else{echo "false1";}
 								
 							}else{
-								echo "False";
+								print_r( $resultado->errorInfo());
 							}
 						
 

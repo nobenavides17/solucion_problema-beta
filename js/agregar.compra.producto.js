@@ -10,7 +10,7 @@
 			var precio = parseFloat($("#listado tbody #"+id).find("#precio_compra").val()).toFixed(2);
 			 var subtotal = cantidad*precio;
 
-			 $("#listado tbody #"+id).find("#p").text("$ "+subtotal);
+			 $("#listado tbody #"+id).find("#p").text(subtotal);
 		}
 		function registroCompra(codigo , cantidad, precio, proveedor, fecha, subtotal, factura){
 
@@ -88,11 +88,10 @@
 					var cantidad = $(this).find("#cantidad").val();
 					var precio_unitario = $(this).find("#precio_compra").val();
 					
-					var subtotal = $(this).find("#subtotal").text();
+					var subtotal = $(this).find("#p").text();
 					registroCompra(id_producto,cantidad,precio_unitario,id_proveedor,fecha,subtotal,num_factura);
 					
 				});
-			alert("Compra agregada Correctamente.");
 		}
 
 

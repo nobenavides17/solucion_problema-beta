@@ -45,6 +45,7 @@ try{
 		$_SESSION["user"] = $user;
 		$_SESSION["nombre"] = $datos["nombre"];
 		$_SESSION["sucursal"] = $datos["nombre_sucursal"];
+		$_SESSION["id_sucursal"] = $datos["id_sucursal"];
 		$_SESSION["id_usuario"] = $datos["id_usuario"];
 		
 		echo "<script>window.location='dash.php'</script>";

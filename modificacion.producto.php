@@ -1,5 +1,4 @@
 <?php 	
-session_start();
 	 include("menu.php");?>
 <input type="hidden" name="id_producto_modificar" id="id_producto_modificar" value="<?php echo $_SESSION['id_producto_modificar']?>"> 
 <link rel="stylesheet" type="text/css" href="css/usuarios.privilegios.css">
