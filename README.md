@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # resolucion_problema WORK
 
 En el archivo "conex.php" archivo para la conexion, modificar, usuario y password.
@@ -15,3 +16,6 @@ El diagrama de la DB es un png, "DIAGRAMA_PRUEBA_WORK.png"
 =======
 # solucion_problematica-Beta-
 >>>>>>> a767e435269f303fbd36f1f561e9142beeab65fa
+=======
+# solucion_problema-beta
+>>>>>>> b2967a8a1d3d07cf9a47ad732330a3cdd15851e7
